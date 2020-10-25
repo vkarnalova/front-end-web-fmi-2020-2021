@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advanced Form</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>User Information</legend>
+            <label for="userName">Username:</label>
+            <input type="text" id="userName" name="userName"><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First name:</label><br>
+            <input type="text" id="firstName" name="firstName"><br>
+            <label for="lastName">Last name:</label><br>
+            <input type="lastName" id="lastName" name="lastName"><br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male"><br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" value="checked"><br>
+            <label for="favoriteFood">Favorite Food</label>
+            <select id="foods" name="foods">
+                <option value="chocolate">Chocolate</option>
+                <option value="musaka">Musaka</option>
+            </select>
+        </fieldset>
+        <br>
+        <input type="submit" value="Register">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
