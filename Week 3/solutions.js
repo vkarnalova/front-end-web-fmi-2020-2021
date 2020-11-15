@@ -27,12 +27,6 @@ function hasElementsSmallerThanTen() {
     return A.filter(el => el < 10).length > 0;
 }
 
-/* Check if there are elements smaller than 10 */
-function hasElementsSmallerThanTen() {
-    var A = [10, 5, 13, 18, 51];
-    return A.filter(el => el < 10).length > 0;
-}
-
 /* Return all elements that are multiple of 3 */
 function getMultiplesOfThree() {
     var A = [10, 5, 13, 18, 51];
@@ -56,7 +50,8 @@ function calculateSum() {
 function getArrayWithDate() {
     var dates = Array(2);
     dates[0] = new Date();
-    dates[1] = new Date('08 Dec 2018 21:00:00');
+    dates[1] = new Date('12.08.2018');
+    dates[1].setHours(21, 0, 0);
     return dates;
 }
 
@@ -80,7 +75,7 @@ function getDayOfWeek(dayOfWeek) {
 
 /* Return the date in dd.mm.yyyy format*/
 function formatDate(date) {
-    return date.getDate() + "." + date.getMonth() + "." + date.getFullYear();
+    return date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear();
 }
 
 /* Return time in hh:mm:ss format*/
