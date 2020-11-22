@@ -5,17 +5,17 @@ class PaymentMethod {
 };
 
 class CashMethod extends PaymentMethod {
-    constructor(amountValue = 0) {
+    constructor(amount = 0) {
         super();
-        let _amount = amountValue;
+        let _amount = amount;
 
-        this.addToAmount = (amountValue) => {
-            _amount += amountValue;
+        this.addToAmount = (amount) => {
+            _amount += amount;
             return this;
         }
 
-        this.reduceFromAmount = (amountValue) => {
-            _amount -= amountValue;
+        this.reduceFromAmount = (amount) => {
+            _amount -= amount;
             if (_amount < 0) {
                 _amount = 0;
             }
@@ -31,17 +31,17 @@ class CashMethod extends PaymentMethod {
 };
 
 class CreditMethod extends PaymentMethod {
-    constructor(amountValue = 0) {
+    constructor(amount = 0) {
         super();
-        let _amount = amountValue;
+        let _amount = amount;
 
-        this.addToAmount = (amountValue) => {
-            _amount += parseInt(0.9 * amountValue);
+        this.addToAmount = (amount) => {
+            _amount += parseInt(0.9 * amount);
             return this;
         }
 
-        this.reduceFromAmount = (amountValue) => {
-            _amount -= amountValue;
+        this.reduceFromAmount = (amount) => {
+            _amount -= amount;
             if (_amount < 0) {
                 _amount = 0;
             }
