@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ProfilePageStyle.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div id="page">
+        <header class="main-header">
+            <h1 id="header-title">Flutter</h1>
+            <div id="search">
+                <input type="text" placeholder="Search"></input>
+                <img src="./images/search-icon.png" alt="Search icon">
+            </div>
+        </header>
+        <div class="content">
+            <section class="profile">
+                <!-- Profile picture and name-->
+                <div class="profile-main-info">
+                    <img src="./images/avatar.png" alt="Martin Hristov profile picture">
+                    <label>Martin Hristov</label>
+                </div>
+
+                <!-- Additional information -->
+                <div class="profile-additional-info">
+                    <div class="activity">
+                        <ul class="posts">
+                            <li class="activity-text">Posts</li>
+                            <li class="activity-number">1</li>
+                        </ul>
+                        <ul class="reactions">
+                            <li class="activity-text">Reactions</li>
+                            <li class="activity-number">7</li>
+                        </ul>
+                    </div>
+                    <button>Log Out</button>
+                </div>
+            </section>
+            <section class="main-activity">
+                <section class="add-post">
+                    <img src="./images/avatar.png" alt="Martin Hristov picture">
+                    <div class="say-something">
+                        <input type="text" placeholder="Say something"></input>
+                        <img src="./images/comment-icon.png" alt="Search icon">
+                    </div>
+                </section>
+                <section>
+                    <div class="comment">
+                        <img class="comment-profile-photo" src="./images/avatar.png" alt="Ivan Ivanov picture">
+
+                        <div class="comment-main">
+                            <ul>
+                                <li>Ivan Ivanov</li>
+                                <li>0 seconds ago</li>
+                            </ul>
+                            <p>Ex eu non voluptate esse aliqua velit. Nulla duis ipsum incididunt culpa laborum commodo
+                                consequant in. Nostrud elit dolor laboris tempor officia duis exercitation anim
+                                voluptate ut
+                                enim officia proident. Labore elit esse velit quis et voluptate officia laboris cillum
+                                dolor
+                                pariatur excepteur esse laborum. Veniam adipisicing quis nisi cillum voluptate veniam
+                                nulla
+                                sunt.</p>
+                            <div class="comment-reactions">
+                                <div class="likes">
+                                    <img src="./images/like-emoji.png" alt="Like emoji">
+                                    <label>5</label>
+                                </div>
+                                <div class="dislikes">
+                                    <img src="./images/dislike-emoji.png" alt="Dislike emoji">
+                                    <label>3</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img class="close-icon" src="./images/close-icon.png" alt="Close icon">
+                    </div>
+                    <div class="comment">
+                        <img class="comment-profile-photo" src="./images/avatar.png" alt="Martin picture">
+
+                        <div class=comment-main>
+                            <ul>
+                                <li>Martin</li>
+                                <li>Last month</li>
+                            </ul>
+                            <p>Mollit consequat ipsum sit laboris incididunt sunt deserunt velit elit eu proident.</p>
+                            <div class="comment-reactions">
+                                <div class="likes">
+                                    <img src="./images/like-emoji.png" alt="Like emoji">
+                                    <label>3</label>
+                                </div>
+                                <div class="dislikes">
+                                    <img src="./images/dislike-emoji.png" alt="Dislike emoji">
+                                    <label>0</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img class="close-icon" src="./images/close-icon.png" alt="Close icon">
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
