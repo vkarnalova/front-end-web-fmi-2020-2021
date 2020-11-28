@@ -156,6 +156,7 @@ img {
     border-style: solid;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 87%;
 }
 
@@ -172,6 +173,14 @@ img {
     color: #66C3DA;
     font-weight: bold;
     font-size: 0.8rem;
+}
+
+.say-something img {
+    width: 1.3rem;
+    height: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    margin-right: 0.5rem;
 }
 
 .comment {
@@ -236,12 +245,25 @@ img {
 }
 
 @media screen and (max-width: 890px) {
+    .main-header {
+        justify-content: center;
+    }
+    #search input {
+        margin-right: 0;
+    }
     .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: auto;
         width: 90%;
+        max-width: 90%;
+        margin-top: 0.5rem;
     }
     .profile {
         max-width: 100%;
-        width: 100;
+        width: 100%;
         box-sizing: border-box;
     }
     .profile-main-info img {
@@ -261,14 +283,11 @@ img {
     .main-activity {
         width: 100%;
         box-sizing: border-box;
+        margin: 0;
     }
     .add-post {
         height: 3rem;
         box-sizing: border-box;
-    }
-    .say-something img {
-        width: 1.7rem;
-        height: 1.7rem;
     }
     .comment {
         padding: 1rem;
